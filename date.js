@@ -13,11 +13,9 @@ exports.getDate = function() {
 exports.getDay = function() {
   const today = new Date();
 
- const options = {
+  const options = {
     weekday: "long"
   };
 
-  let day = today.toLocaleDateString("en-US", options);
-
-  return day;
+  return today.toLocaleDateString("en-US", options);
 };
