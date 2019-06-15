@@ -13,5 +13,8 @@
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "nodemon": "^1.18.9"
+  },
+  "devDependencies": {
+    "cypress": "^3.3.1"
   }
 }
