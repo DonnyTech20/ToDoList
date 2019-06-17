@@ -16,18 +16,20 @@
 describe("My First Cypress Test", function () {
     it('UI visit Do List App page', function () {
      cy.visit('localhost:5000')
+
+    cy.contains('Click Here').click()
+    cy.title().should('eq','To Do List')
+    cy.url().should('include','/work')
+    cy.get('footer')
+
     })
 })
 
 
 
-
-
-
-
-
- describe("My First Cypress Test", () => {
-    it("Just a blank page for now", () => {
-        expect(true).to.equal(true)
+ /* describe("Cypress new Page Test", () => {
+    it("A work list page", () => {
+       cy.url()
+       .should('include','/work')
     })
-}) 
+}) */
